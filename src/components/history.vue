@@ -14,6 +14,26 @@
 		
 		<!--列表的布局结构-->
 		<div class="container">
+			<div class="con2">
+				<ul>
+					<li>
+						<div class="write"></div>
+						<div class="round"></div>
+					</li>
+					<li>
+						<div class="write"></div>
+						<div class="round"></div>
+					</li>
+					<li>
+						<div class="write"></div>
+						<div class="round"></div>
+					</li>
+					<li>
+						<div class="write"></div>
+						<div class="round"></div>
+					</li>
+				</ul>
+			</div>
 			<div class="con">
 				<div class="month1">
 					<p>2017年3月</p>
@@ -111,7 +131,7 @@
 </script>
 
 <style scoped>
-	*{
+*{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -119,6 +139,11 @@
 html,body{
 	width: 100%;
 	height: 100%;
+}
+hr{
+	background-color: #ccc;
+	height: 1px;
+	border: 0;
 }
 .hello{
 	width: 100%;
@@ -160,11 +185,36 @@ html,body{
 	background-position:0px 0px;
 	background-repeat: no-repeat;
 	background-size:100% 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.con2{
+	width:2%;
+	height: 100%;
+}
+.con2 li{
+	width: 100%;
+}
+.con2 li .write{
+	width:20%;
+	height:100px;
+	background: #FFFFFF;
+	margin-left: 50%;
+}
+.con2 li .round{
+	width:10px;
+	height:10px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	margin:10px auto;
+	
 }
 .con{
 	width:94%;
 	height:94%;
 	padding:3%;
+	margin-left:10px;
 	background: #FFFFFF;
 	border-radius: 6px;
 }

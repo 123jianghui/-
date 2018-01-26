@@ -2,8 +2,8 @@
 	<div class="hello">
 		<div class="top">
 			<div class="left">
-				<span><img src="../../../商品列表切、标/切图/手机4-导航/返回@2x.png"/></span>
-				<span>返回</span>
+			<img src="../../../商品列表切、标/切图/手机4-导航/返回@2x.png"/>
+				<p>返回</p>
 			</div>
 			<div class="m">联系客服</div>
 			<div class="right">
@@ -43,46 +43,56 @@ html,body{
 	width: 100%;
 	height: 100%;
 }
-.top{
-	width: 94%;
-	padding: 2% 3%;
-	background: #000000;
-	display: flex;
-	align-items: center;
-	justify-content:space-between;
-	color: #FFFFFF;
-}
-.top .left{
-	display: flex;
-	align-items: center;
-}
-.top .left img{
-	width: 70%;
-	margin-right: 5px;
-}
-.top .m{
-	width: 50%;
-	text-align:center;
-}
-.top .right{
-	width: 20%;
-}
-.top .right ul{
-	margin-left: 10%;
-	display: flex;
-	align-items: center;
-	text-align: right;
-}
-.top .right ul li{
-	width: 10px;
-	height: 10px;
-	background: #FFFFFF;
-	margin-left: 8px;
-	border-radius: 10px;
-}
+	.top {
+		width: 94%;
+		padding: 3% 3%;
+		background: #000000;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: #FFFFFF;
+	}
+	
+	.top .left {
+		width: 20%;
+		display: flex;
+		align-items: center;
+		font-size: 28px;
+	}
+	
+	.top .left img {
+		width: 18%;
+		margin-right: 5px;
+	}
+	
+	.top .m {
+		width: 50%;
+		font-size:34px;
+		text-align: center;
+	}
+	
+	.top .right {
+		width: 20%;
+	}
+	
+	.top .right ul {
+		margin-left:50%;
+		display: flex;
+		align-items: center;
+		text-align: right;
+	}
+	
+	.top .right ul li {
+		width: 15px;
+		height:15px;
+		background: #FFFFFF;
+		margin-left:10px;
+		border-radius:15px;
+	}
+	
 .container{
 	width: 100%;
-	height:620px;
+	height:100%;
 	background:url(../assets/images/切图/联系-切图/背景@2x.png) no-repeat 0px 0px;
 	background-size: 100% 100%;
 	text-align: center;
@@ -91,37 +101,38 @@ html,body{
 	width: 100%;
 	color: #323232;
 	text-align: center;
-	font-size: 20px;
- 	padding-top: 40px;
- 	padding-bottom: 30px;
+	font-size: 36px;
+ 	padding-top:63px;
+ 	padding-bottom:48px;
 }
 textarea{
 	width:72%;
-	height: 300px;
-	font-size: 16px;
-	padding: 4%;
+	height:560px;
+	font-size:31px;
+	padding: 33px 32px;
 }
 .submit{
 	width:25%;
 	margin-left:55%;
-	margin-top:15px;
+	margin-top:33px;
 }
 .btn{
 	width: 80%;
-	height:80px;
-	margin:40px auto;
+	margin:100px auto;
 	background: url(../assets/images/切图/联系-切图/客服按钮@2x.png) no-repeat 50% 0px;
-	background-size: 90% 90%;
+	background-size: 100% 100%;
 	display: flex;
+	padding:5% 0;
 	align-items: center;
 	justify-content:center;
+	margin-top:13%;
 }
 .btn img{
 	width:8%;
 }
 .btn p{
-	font-size:16px;
+	font-size:28px;
 	color: #FFFFFF;
-	padding-left:5%;
+	padding-left:22px;
 }
 </style>

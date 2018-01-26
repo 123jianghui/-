@@ -3,8 +3,8 @@
 		<!--头部的样式结构-->
 		<div class="header">
 			<div class="left">
-				<span><img src="../../../商品列表切、标/切图/手机4-导航/返回@2x.png"/></span>
-				<span>返回</span>
+				<img src="../../../商品列表切、标/切图/手机4-导航/返回@2x.png"/>
+				<p>返回</p>
 			</div>
 			<div class="m">商品列表</div>
 			<div class="right">
@@ -16,10 +16,6 @@
 		<div class="container">
 			<div class="con2">
 				<ul>
-					<li>
-						<div class="write"></div>
-						<div class="round"></div>
-					</li>
 					<li>
 						<div class="write"></div>
 						<div class="round"></div>
@@ -47,7 +43,7 @@
 									<span class="data">02</span>
 									<span class="zongj">总计&nbsp;<label class="price">￥512.00</label></span>
 								</p>
-								<p style="color: #999999;;">
+								<p style="color: #999999;margin-top:20px;">
 									<span class="month2">3月</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									<span class="shop">共6件商品&nbsp;| &nbsp;已完成</span>
 								</p>
@@ -161,32 +157,35 @@ hr{
 .header .left{
 	display: flex;
 	align-items: center;
+	width: 20%;
+	font-size:26px;
 }
 .header .left img{
-	width: 70%;
+	width: 15%;
 	margin-right: 5px;
 }
 .header .m{
 	width: 50%;
 	text-align:center;
+	font-size:30px;
 }
 .header .right{
 	width: 20%;
 	text-align: right;
 }
 .header .right img{
-	width: 50%;
+	width: 40%;
 }
 .container{
 	width:90%;
-	height:600px;
+	height:100%;
 	padding: 3% 5%;
 	background-image: url(../assets/images/商品详情/android/drawable-hdpi/dabeijing.png);
 	background-position:0px 0px;
 	background-repeat: no-repeat;
 	background-size:100% 100%;
 	display: flex;
-	align-items: center;
+	/*align-items: center;*/
 	justify-content: space-between;
 }
 .con2{
@@ -198,16 +197,16 @@ hr{
 }
 .con2 li .write{
 	width:20%;
-	height:100px;
+	height:180px;
 	background: #FFFFFF;
 	margin-left: 50%;
 }
 .con2 li .round{
-	width:10px;
-	height:10px;
+	width:15px;
+	height:15px;
 	background: #FFFFFF;
-	border-radius: 10px;
-	margin:10px auto;
+	border-radius: 15px;
+	margin:20px auto;
 	
 }
 .con{
@@ -219,12 +218,13 @@ hr{
 	border-radius: 6px;
 }
 .con .month1{
-	font-size:20px;
-	color: #333333;
+	font-size:30px;
+	color:black;
+	margin-left:4%;
 }
 .con ul{
 	width: 94%;
-	padding:2% 3%;
+	padding:0% 3%;
 	height: 100%;
 }
 .con ul li{
@@ -244,16 +244,20 @@ hr{
 }
 .con li  .top .l{
 	width: 75%;
-	padding: 4% 0;
+	margin:30px 0;
 }
 .con li  .top .l .data{
-	font-size: 26px;
+	font-size:32px;
 	color: #000000;
+
+}
+.month2,.shop{
+	font-size: 24px;
 }
 .con li  .top .l .zongj{
-	font-size: 20px;
+	font-size: 30px;
 	color: #000000;
-	margin-left: 20px;
+	margin-left: 45px;
 }
 .con li  .top .l .zongj label{
 	color: red;
@@ -267,14 +271,14 @@ hr{
 .con .bottom{
 	width: 100%;
 	display: flex;
-	padding: 5% 0;
+	margin: 20px 0;
 	align-items: center;
 }
 .con .bottom .l{
 	width: 75%;
 }
 .con .bottom p{
-	font-size: 18px;
+	font-size:30px;
 	color: #666666;
 }
 .con .bottom .r{

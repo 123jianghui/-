@@ -6,6 +6,7 @@ import History from '@/components/history'
 import kefu from '@/components/kefu'
 import shensu from '@/components/shensu'
 import User from '@/components/user'
+import reg from '@/components/reg'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
     	path:'/shensu',
     	name:'shensu',
     	component:shensu
+    },
+    {
+    	path:"/reg",
+    	name:"reg",
+    	component:reg
     }
   ]
 })

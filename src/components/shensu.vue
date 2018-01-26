@@ -2,8 +2,8 @@
 	<div class="hello">
 		<div class="top">
 			<div class="left">
-				<span><img src="../../../商品列表切、标/切图/手机4-导航/返回@2x.png"/></span>
-				<span>返回</span>
+				<img src="../../../商品列表切、标/切图/手机4-导航/返回@2x.png"/>
+				<p>返回</p>
 			</div>
 			<div class="m">商品列表</div>
 			<div class="right">
@@ -30,7 +30,7 @@
 			</div>
 			<p class="addImage">添加图片</p>
 			<div class="submit">
-				<p style="color: #fff;">提交</p>
+				<p style="color: #fff;font-size:28px;">提交</p>
 			</div>
 		</div>
 	</div>
@@ -84,17 +84,20 @@
 	}
 	
 	.top .left {
+		width: 20%;
 		display: flex;
 		align-items: center;
+		font-size: 28px;
 	}
 	
 	.top .left img {
-		width: 50%;
+		width: 18%;
 		margin-right: 5px;
 	}
 	
 	.top .m {
 		width: 50%;
+		font-size:34px;
 		text-align: center;
 	}
 	
@@ -103,23 +106,22 @@
 	}
 	
 	.top .right ul {
-		margin-left: 10%;
+		margin-left:50%;
 		display: flex;
 		align-items: center;
 		text-align: right;
 	}
 	
 	.top .right ul li {
-		width: 10px;
-		height: 10px;
+		width: 15px;
+		height:15px;
 		background: #FFFFFF;
-		margin-left: 8px;
-		border-radius: 10px;
+		margin-left:10px;
+		border-radius:15px;
 	}
-	
 	.container {
 		width: 80%;
-		height: 620px;
+		height:100%;
 		background: url(../assets/images/切图/联系-切图/背景@2x.png) no-repeat 0px 0px;
 		background-size: 100% 100%;
 		margin: 0 auto;
@@ -128,7 +130,8 @@
 	
 	.container p:nth-child(1) {
 		color: black;
-		font-size: 18px;
+		font-size: 36px;
+		margin: 10px 0;
 	}
 	
 	.container ul {
@@ -146,8 +149,8 @@
 		background: url(../assets/images/切图/申诉-切图/未选中@2x.png) no-repeat 0px 0px;
 		background-size: 100% 100%;
 		padding: 2% 0;
-		margin-top: 5%;
-		font-size: 16px;
+		margin-top:29px;
+		font-size:28px;
 		color: #FF6A7F;
 	}
 	.active{
@@ -155,21 +158,23 @@
 		background: url(../assets/images/切图/申诉-切图/选中@2x.png) no-repeat 0px 0px;
 		background-size: 100% 100%;
 		padding: 2% 0;
-		margin-top: 5%;
-		font-size: 16px;
+		margin-top:29px;
+		font-size: 28px;
 		color: #FFFFFF;
 	}
 	textarea {
 		width: 94%;
-		height: 180px;
+		height:378px;
 		color: #949494;
-		font-size: 20px;
+		font-size: 31px;
+		margin-top: 21px;
+		border: 2px solid #ccc;
 		padding: 3%;
 	}
 	
 	.img {
-		width: 40%;
-		height: 100px;
+		width:200px;
+		height:170px;
 		margin: 3% 0;
 		background: url(../assets/images/切图/申诉-切图/添加图片@2x.png) no-repeat 0px 0px;
 		background-size: 100% 100%;
@@ -177,16 +182,19 @@
 	
 	.addImage {
 		color: black;
-		font-size: 18px;
+		font-size: 31px;
 		margin-left: 5%;
+		margin-top:19px;
+		margin-bottom:5%;
 	}
 	
 	.submit {
 		width: 80%;
 		text-align: center;
 		background: url(../assets/images/切图/申诉-切图/提交按钮@2x.png) no-repeat 0px 0px;
-		margin: 50px auto;
-		padding: 5% 0;
+		margin:auto;
+		padding:3% 0;
 		background-size: 100% 100%;
+		/*margin-top: 5%;*/
 	}
 </style>

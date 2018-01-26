@@ -2,8 +2,8 @@
   <div class="hello">
  			<div class="top">
  					<div class="left">
- 							<span><img src="../../../商品列表切、标/切图/手机4-导航/返回@2x.png"/></span>
- 							<span>返回</span>
+ 							<img src="../../../商品列表切、标/切图/手机4-导航/返回@2x.png"/>
+ 							<p>返回</p>
  					</div>
  					<div class="m">商品列表</div>
  					<div class="right">
@@ -17,7 +17,7 @@
  			<!--搜索框-->
  			<div class="header" v-show="bool">
  					<div class="ss">
- 						 <input type="text" placeholder="请输入商品名称"/>
+ 						 <input type="text" placeholder="请输入商品名称" style="font-size: 28px;"/>
  					</div>
  					<p>设备：天河一号</p>
  					<div class="nav">
@@ -86,8 +86,7 @@
    
 <script>
 	import BScroll from 'better-scroll'
-//	let wrapper = document.querySelector('.wrapper')
-//let scroll = new BScroll(wrapper, {})
+
 export default {
 	
   name: 'HelloWorld',
@@ -123,27 +122,24 @@ html,body{
 	color: #fff;
 	padding: 2% 3%;
 	display:flex ;
-	div{
-     align-items:center;
-     justify-content: space-around;
-	}
+  align-items:center;
+  justify-content: space-around;
 	.left{
 		width: 20%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		span:nth-child(1){
-			margin-right:5px;
+		font-size: 30px;
 			img{
-				width:75%;
+				width:20%;
 				padding-top: 5px;
+				margin-right: 10%;
 			}
-		}
 	}
 	.m{
 		width: 60%;
 		text-align:center;
-		font-size: 20px;
+		font-size:32px;
 	}
 	.right{
 		width: 20%;
@@ -152,11 +148,12 @@ html,body{
 			width:100%;
 			display:flex;
 			justify-content: center;
+			margin-left:20%;
 			li{
 				background: #FFFFFF;
-				width: 10px;
-				height: 10px;
-				border-radius: 10px;
+				width: 20px;
+				height:20px;
+				border-radius: 20px;
 				margin-left:5px;
 			}
 		}
@@ -165,28 +162,28 @@ html,body{
 /*header的样式*/
 .header{
 	background:#F9A7BE;
-	width: 100%;
-	height: 250px;
+	width:96%;
+	padding: 0% 2%;
+	height:477px;
 	.ss{
 		width:100%;
+	  text-align: center;
 		input{
-			width:80%;
-			margin-top: 11px;
-			height: 31px;
-			box-shadow: #E81D04 1px 17px 33%;
+			width:84%;
+			margin-top: 22px;
+			height: 81px;
 			border-radius:5px;
-			font-size: 18px;
+			
 			color: #B3B3B3;
-			margin-left: 10px;
-			padding-left: 50px;
-			background:url(../../../商品列表切、标/切图/商品列表粉-展开/搜索@2x.png) no-repeat 12px;
+			padding-left: 80px;
+			background:url(../../../商品列表切、标/切图/商品列表粉-展开/搜索@2x.png) no-repeat 20px;
 			background-size:8%;
 			background-color: #fff;
 			font-size: 16px;
 		}
 	}
 	p{
-		font-size:20px;
+		font-size:26px;
 		color: #FFFFFF;
 		margin:9px 0px 17px 20px;
 	}
@@ -196,15 +193,16 @@ html,body{
 			width: 100%;
 			align-items: center;
 			justify-content: space-around;
-			margin-bottom: 12px;
+			margin-bottom: 22px;
 			text-align: center;
 			li{
-			   width: 21%;
-			   padding: 1% 0;
+			   width:24%;
 			   background: url(../../../商品列表切、标/切图/商品列表粉-展开/休闲零食按钮@3x.png) no-repeat;
 			   background-size: 100% 100%;
-			   font-size: 16px;
+			   font-size:26px;
 			   color: #000000;
+			   padding:1% 0;
+			   margin-left: 30px;
 			}
 		}
 	}
@@ -215,10 +213,9 @@ html,body{
 		justify-content: center;
 		div{
 			width: 62px;
-			height: 3px;
+			margin: 22px 5px 24px 0;
+			height:5px;
 			background: #FFFFFF;
-			
-			margin-left: 5px;
 		}
 		.on{
 			background: #000000;
@@ -226,11 +223,11 @@ html,body{
 	}
 	.fix{
 		width:94%;
-		height:41px;
+		height:82px;
+		line-height: 82px;
 		background: #FFFFFF;
-		font-size:20px;
+		font-size:28px;
 		color: #000000;
-		line-height: 41px;
 		border-radius: 5px;
 		margin: 12px 3%;
 		text-align: center;
@@ -244,19 +241,34 @@ html,body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	div{
+	.l{
+		width:25%;
+		margin-top:40px;
 		img{
-			width:65%;
+			width:100%;
 		}
 	}
 	.m{
-		margin-left:-30%;
+		width:50%;
+		text-align: center;
+		img{
+			width:10%;
+			
+		}
+	}
+	.r{
+		width: 25%;
+		text-align: right;
+		img{
+			width:30%;
+			margin-right: 29px;
+		}
 	}
 }
 .container{
 	width: 100%;
-	height:600px;
-	margin-top: -2%;
+	height:100%;
+
 	background: url(../../../商品列表切、标/切图/商品列表粉/背景粉@2x.png) no-repeat 100% 0%;
 	background-size: 100% 100%;
 	overflow: hidden;
@@ -278,37 +290,38 @@ html,body{
 		}
 	}
 	.con{
-		width:94%;
-		padding: 2% 3%;
+		width:100%;
 		ol{
 			width: 100%;
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
 			flex-wrap: wrap;
 			li{
-				width: 48%;
-				height: 160px;
-				margin-top:3%;
+				width: 44%;
+				height:328px;
+				margin-top:20px;
+				margin-left: 32px;
 				background: url(../../../商品列表切、标/切图/商品列表粉/商品背景@2x.png) no-repeat 100% 100%;
-				background-size:160px 160px;
+				background-size:100% 100%;
 			}
 		}
 		.position{
 			position:fixed;
 			top:80%;
 			img{
-				width:40%;
+				width:80%;
 			}
 		}
 	}
 }
 .footer{
 	width: 94%;
+	height:8%;
 	padding:2% 3%;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
+	align-items: center;
 	position:fixed;
   opacity: 0.86;
 	background: #FFFFFF;
@@ -316,18 +329,28 @@ html,body{
 	color: #000000;
 	
 	.l{
-		span{
-			color: red;
-			font-size:18px;
+		width:50%;
+		p{
+			font-size: 28px;
+			text-align: left;
+			span{
+				color: red;
+				font-size:34px;
+			}
 		}
 	}
 	.r{
-		width:103px;
-		height: 36px;
-		line-height: 36px;
-		background: url(../../../商品列表切、标/切图/商品列表粉/确认支付@2x.png) no-repeat 50% 0%;
-		background-size: 100% 100%;
-		text-align: center;
-	}
+		width:50%;
+		height: 73px;
+		line-height: 73px;
+		
+		margin-right:16px;
+		background: url(../../../商品列表切、标/切图/商品列表粉/确认支付@2x.png) no-repeat 100% 0%;
+		background-size: 50%;
+		p{
+			margin-left: 50%;
+			font-size: 26px;
+		}
+			}
 }
 </style>
